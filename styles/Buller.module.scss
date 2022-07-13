@@ -1,0 +1,92 @@
+.container_money {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-top: 23px;
+    position: relative;
+
+    .balance {
+      width: 300px;
+      height: 86px;
+      padding: 12px 55px 12px 12px;
+      border-radius: 4px;
+      background: white;
+      box-shadow: 0 1px 9px 0 rgba(56, 56, 56, 0.2);
+      z-index: 4;
+      position: absolute;
+      
+      p {
+        width: 134px;
+        height: 15px;
+        margin: 0 99px 7px 0;
+        font-size: 12px;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.33;
+        letter-spacing: normal;
+        color: #333
+      }
+
+      span {
+        width: 233px;
+        height: 40px;
+        margin: 7px 0 0;
+        font-size: 34px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.18;
+        letter-spacing: normal;
+        color: #bb64c8;
+      }
+    }
+    .icons {
+        top: 74px;
+        position: absolute;
+        width: 100%;
+        height: 116px;
+        padding: 36px 61px 43px 53px;
+        background-color: #783183;
+        z-index: -1;
+
+        &__list {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+
+          div {
+            display: flex;
+            flex-flow: column wrap;
+          }
+
+          .subtitle {
+            color: white;
+            font-size: 8px;
+            font-weight: 600;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+          }
+        }
+      }
+    .total {
+      top:  172px;
+      position: absolute;
+      z-index: 4;
+      width: 300px;
+      height: 186px;
+      border-radius: 4px;
+      padding: 12px 13px 12px 12px;
+      background: white;
+      box-shadow: 0 1px 9px 0 rgba(56, 56, 56, 0.2);
+    }
+    .posts {
+      top: 375px;
+      width: 100%;
+      height: 300px;
+      position: absolute;
+    }
+  }

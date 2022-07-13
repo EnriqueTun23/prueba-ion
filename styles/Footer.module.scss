@@ -1,0 +1,29 @@
+.footer {
+   position: fixed;
+   left: 0;
+   // left: 25%;
+   bottom: 0;
+   width: 100%;
+   width: 375px;
+   background-color: white;
+   z-index: 4;
+   text-align: center;
+   height: 82px;
+
+   div {
+    display: flex;
+    justify-content: space-around;
+   }
+
+   .line {
+      display: flex;
+      justify-content: center;
+      
+      div {
+         width: 134px;
+         height: 5px;
+         background-color: black;
+         margin-top: 12%;
+      }
+   }
+}

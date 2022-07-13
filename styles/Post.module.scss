@@ -1,0 +1,115 @@
+.posts_data {
+    margin-top: 20px;
+    width: 100%;
+    height: 200px;
+    overflow:scroll;
+    padding-left: 18px;
+    padding-right: 24px;
+
+    &__titles {
+        display: flex;
+        justify-content: space-between;
+
+        &__movs {
+            font-size: 24px;
+            font-weight: 600;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.33;
+            letter-spacing: normal;
+            color: #333;
+        }
+
+        &__all {
+            font-size: 15px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.33;
+            letter-spacing: normal;
+            color: #22a8d2;
+            margin-top: 10px;
+        }
+    }
+
+    .container {
+        margin-top: 19px;
+        display: flex;
+        justify-content: space-between;
+
+        &__list {
+            display: flex;
+
+            &__name {
+                display: flex;
+                flex-flow: column wrap;
+                margin-left: 16px;
+
+                &__name {
+                    font-size: 14px;
+                    font-weight: 600;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 1.43;
+                    letter-spacing: normal;
+                    color: #333;
+                }
+
+                &__species {
+                    font-size: 12px;
+                    font-weight: normal;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 1.67;
+                    letter-spacing: normal;
+                    color: #333;
+                }
+            }
+
+        }
+
+
+        &__detail {
+            display: flex;
+            flex-flow: column wrap;
+            text-align: end;
+
+            &__id {
+                font-size: 12px;
+                font-weight: 300;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.67;
+                letter-spacing: normal;
+                text-align: right;
+                color: #333;
+            }
+
+            &__status {
+                font-size: 14px;
+                font-weight: 600;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.43;
+                letter-spacing: normal;
+                text-align: right;
+                color: #333;
+            }
+        }
+    }
+
+    &__control {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+
+        &__btn {
+            width: 30%;
+            border-width: 0px;
+            background-color: transparent;
+            cursor: pointer;
+            color: #333;
+            font-size: 16px;
+        }
+    }
+}

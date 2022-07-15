@@ -5,12 +5,25 @@ import PropTypes, { InferProps } from 'prop-types';
 import { NextPage } from 'next';
 
 import Image from 'next/image'
+import Router from 'next/router';
 
 import styles from '../styles/Post.module.scss';
+import { Person } from '../interfaces/person.interface';
+import { useAppDispatch } from '../store/hooks';
+import { getDataInfo } from '../store/data/actions';
 
-const Post: NextPage = ( { person }: any ) => {
-  return (
-      <div className={styles.container}>
+interface data {
+    person: Person;
+}
+
+const Post: NextPage = ( { person }: data ) => {
+    const dispatch = useAppDispatch();
+    const redirectData = () => {
+        dispatch(getDataInfo(person.id))
+        Router.push(`/post/${person.id}`)
+    }
+    return (
+      <div onClick={() => redirectData()} className={styles.container}>
           <div className={styles.container__list}>
               <Image
                   src={person.image}
